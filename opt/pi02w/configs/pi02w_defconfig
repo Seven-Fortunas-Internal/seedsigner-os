@@ -52,6 +52,9 @@ BR2_PACKAGE_PYTHON_PYZBAR=y
 BR2_PACKAGE_PYTHON_EMBIT=y
 BR2_PACKAGE_PYTHON_PICAMERA=y
 BR2_PACKAGE_PYTHON_QRCODE=y
+# Multi-chain (EVM): Keccak-256 via pycryptodomex (Cryptodome namespace), the
+# Buildroot package name that's actually available -- see requirements.txt.
+BR2_PACKAGE_PYTHON_PYCRYPTODOMEX=y
 # BR2_PACKAGE_PYTHON3_CODECSCJK is not set
 # BR2_PACKAGE_PYTHON3_PYEXPAT is not set
 # BR2_TARGET_ROOTFS_TAR is not set
