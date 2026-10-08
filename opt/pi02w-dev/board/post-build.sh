@@ -107,3 +107,6 @@ SOURCE_DATE_EPOCH=1 PYTHONHASHSEED=0 ${HOST_DIR}/bin/python3.12 \
 # Fail the build if embit can't reach the pre-compiled libsecp256k1 or if we detect the
 # pure-python secp256k1 fallback is present.
 "$(dirname "$0")/../../external-packages/python-embit/verify-secp256k1-binary.sh" "${TARGET_DIR}"
+
+# 7F: install the ML-DSA-65 library the 7F mode needs (fails the build if MLDSA7F_LIB is unset/wrong).
+"$(dirname "$0")/../../external-packages/mldsa7f/install-mldsa7f.sh" "${TARGET_DIR}"
