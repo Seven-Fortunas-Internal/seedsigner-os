@@ -11,6 +11,7 @@ rm -f ${TARGET_DIR}/etc/init.d/S02mdev
 rm -f ${TARGET_DIR}/etc/init.d/S20seedrng
 rm -f ${TARGET_DIR}/etc/init.d/S40network
 rm -f ${TARGET_DIR}/etc/init.d/S50pigpio
+rm -f ${TARGET_DIR}/etc/init.d/S50crond      # no crontabs; nothing to run
 
 # Adding symlink to support upgrade of buildroot python3.10 to python3.12
 ln -srf ${TARGET_DIR}/usr/lib/python3.12 ${TARGET_DIR}/usr/lib/python3.10
